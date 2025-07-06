@@ -1,5 +1,8 @@
 FROM fedora:42
-RUN dnf install -y git python3 python3-pip \
+RUN dnf install -y \
+    git \
+    python3 \
+    python3-pip \
     && dnf clean all
 RUN useradd -m developer
 USER developer
