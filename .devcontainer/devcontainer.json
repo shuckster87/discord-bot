@@ -1,0 +1,19 @@
+{
+  "name": "discord-bot",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "containerEnv": {
+    "HOME": "/home/developer"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  },
+  "securityOpt": [
+    "label=disable"
+  ]
+}
